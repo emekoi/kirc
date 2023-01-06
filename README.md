@@ -19,7 +19,7 @@ Consult `man kirc` for a full list and explanation of available arguments.
          [-u username] [-k password] [-a token] [-o logfile] [-e|x|v|V]
 
 ## DCC
-DCC transfers are always accpeted without user interaction and downloaded to the current directory.
+	DCC transfers are always accpeted without user interaction and downloaded to the current directory.
 
 ## Command Aliases
 
