@@ -45,6 +45,24 @@ Specifies the PASS connection password
 .BI \-a " auth"
 Specifies SASL PLAIN mechanism authentication token
 .TP
+.BI \-D " dir"
+Specifies DCC download directory
+.TP
+.BI \-o " logfile"
+Specifies logfile
+.TP
+.BI \-4
+Connect via ipv4 only
+.TP
+.BI \-6
+Connect via ipv6 only
+.TP
+.BI \-d
+Toggle DCC support
+.TP
+.BI \-f
+Filter ansi color codes
+.TP
 .BI \-e
 Specifies SASL EXTERNAL mechanism
 .TP
@@ -63,6 +81,15 @@ received.
 .BI /<command>
 Send message to IRC host (e.g. /JOIN, /PART, /WHOIS, etc.)
 .TP
+.BI /query " <nick>"
+Set privmsg target. Useful when sending privmsg's to a nick instead of a chan.
+.TP
+.BI // " <text>"
+Send text to current channel (useful when sending '@' and '/', usually to bots)
+.TP
+.BI /chan_privmsg
+Treat all text as a PRIVMSG, until the next /chan_privmsg
+.TP
 .BI /#<channel>
 Set default message channel to <channel>
 .TP
@@ -77,7 +104,7 @@ to specified
 or
 .I <nick>
 .TP
-.BI @@<channel|nick> " <message>"
+.BI /action <channel|nick> " <message>"
 Send CTCP ACTION containing
 .I <message>
 to specified
